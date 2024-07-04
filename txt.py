@@ -1,7 +1,8 @@
 import socket
 import threading
 
- made into comment so I can make fixes
+# this code will have frequent updates added to make accessible with apps
+
  class Server:
     def __init__(self, host, port):
         self.server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
