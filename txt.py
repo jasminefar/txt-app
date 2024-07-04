@@ -1,14 +1,14 @@
 import socket
 import threading
 
-# made into comment so I can make fixes
-# class Server:
-#    def __init__(self, host, port):
-#        self.server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-#        self.server.bind((host, port))
-#        self.server.listen()
-#        self.clients = []
-#        self.nicknames = []
+ made into comment so I can make fixes
+ class Server:
+    def __init__(self, host, port):
+        self.server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.server.bind((host, port))
+        self.server.listen()
+        self.clients = []
+        self.nicknames = []
 
     def broadcast(self, message):
         for client in self.clients:
